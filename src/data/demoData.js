@@ -1,0 +1,305 @@
+export const applicants = [
+  {
+    id: "POS-0042",
+    name: "Ana Lucía Paredes",
+    program: "MBA",
+    course: "Inglés",
+    progress: 42,
+    risk: "Alto",
+    days: 3,
+    tutor: "M. Torres",
+    status: "Requiere atención",
+    initials: "AP",
+  },
+  {
+    id: "POS-0098",
+    name: "Diego Salazar",
+    program: "Ingeniería de Software",
+    course: "Matemática",
+    progress: 38,
+    risk: "Alto",
+    days: 5,
+    tutor: "C. Vega",
+    status: "Requiere atención",
+    initials: "DS",
+  },
+  {
+    id: "POS-0127",
+    name: "Karla Mena",
+    program: "Educación",
+    course: "Proyecto final",
+    progress: 61,
+    risk: "Medio",
+    days: 10,
+    tutor: "M. Torres",
+    status: "En seguimiento",
+    initials: "KM",
+  },
+  {
+    id: "POS-0186",
+    name: "Josué Camisan",
+    program: "Ingeniería de Software",
+    course: "Matemática",
+    progress: 68,
+    risk: "Bajo",
+    days: 12,
+    tutor: "M. Torres",
+    status: "En curso",
+    initials: "JC",
+  },
+  {
+    id: "POS-0233",
+    name: "Luis Andrade",
+    program: "Finanzas",
+    course: "Inglés",
+    progress: 79,
+    risk: "Bajo",
+    days: 15,
+    tutor: "C. Vega",
+    status: "En curso",
+    initials: "LA",
+  },
+  {
+    id: "POS-0244",
+    name: "María Fernanda López",
+    program: "MBA",
+    course: "Proyecto final",
+    progress: 52,
+    risk: "Medio",
+    days: 7,
+    tutor: "M. Torres",
+    status: "En seguimiento",
+    initials: "ML",
+  },
+];
+
+export const programs = [
+  {
+    name: "MBA",
+    code: "MBA-2026-II",
+    students: 118,
+    progress: 74,
+    color: "lavender",
+    period: "Convocatoria 2026-II",
+    risk: 9,
+  },
+  {
+    name: "Ingeniería de Software",
+    code: "MSI-2026-II",
+    students: 104,
+    progress: 61,
+    color: "mint",
+    period: "Convocatoria 2026-II",
+    risk: 14,
+  },
+  {
+    name: "Educación",
+    code: "MED-2026-II",
+    students: 96,
+    progress: 52,
+    color: "peach",
+    period: "Convocatoria 2026-II",
+    risk: 17,
+  },
+  {
+    name: "Finanzas",
+    code: "MFI-2026-II",
+    students: 94,
+    progress: 79,
+    color: "lavender",
+    period: "Convocatoria 2026-II",
+    risk: 7,
+  },
+];
+
+export const courses = [
+  {
+    name: "Inglés",
+    program: "MBA",
+    activities: 4,
+    weight: 100,
+    due: "01 dic 2026",
+    enrolled: 118,
+    progress: 74,
+  },
+  {
+    name: "Matemática",
+    program: "Software",
+    activities: 4,
+    weight: 100,
+    due: "05 dic 2026",
+    enrolled: 104,
+    progress: 61,
+  },
+  {
+    name: "Proyecto final",
+    program: "Todos",
+    activities: 2,
+    weight: 100,
+    due: "15 dic 2026",
+    enrolled: 412,
+    progress: 52,
+  },
+];
+
+export const activityLog = [
+  {
+    title: "Evidencia revisada",
+    detail: "Camila Torres · Marco teórico",
+    time: "Hace 18 min",
+    icon: "file-check-2",
+    tone: "success",
+  },
+  {
+    title: "Seguimiento registrado",
+    detail: "Andrés Paredes · Llamada telefónica",
+    time: "Hace 1 h",
+    icon: "phone",
+    tone: "blue",
+  },
+  {
+    title: "Nuevo postulante inscrito",
+    detail: "Mateo Villacís · Maestría en Sistemas",
+    time: "Hace 3 h",
+    icon: "user-plus",
+    tone: "violet",
+  },
+  {
+    title: "Recordatorio enviado",
+    detail: "Entrega de proyecto · 5 días restantes",
+    time: "Ayer, 16:42",
+    icon: "send",
+    tone: "amber",
+  },
+];
+
+export const deadlines = [
+  {
+    name: "Proyecto de investigación",
+    person: "Andrés Paredes",
+    days: 2,
+    level: "Alto",
+  },
+  {
+    name: "Ensayo financiero",
+    person: "Sofía Andrade",
+    days: 1,
+    level: "Alto",
+  },
+  { name: "Marco teórico", person: "Valeria Cedeño", days: 7, level: "Medio" },
+];
+
+export const followups = [
+  {
+    person: "Andrés Paredes",
+    medium: "Llamada telefónica",
+    result: "Sin respuesta",
+    next: "Reintentar por correo",
+    date: "20 nov, 09:30",
+    risk: "Alto",
+  },
+  {
+    person: "Valeria Cedeño",
+    medium: "Videoconferencia",
+    result: "Compromiso acordado",
+    next: "Revisar avance",
+    date: "19 nov, 15:00",
+    risk: "Medio",
+  },
+  {
+    person: "Camila Torres",
+    medium: "Correo electrónico",
+    result: "Respondió",
+    next: "Sin acción pendiente",
+    date: "19 nov, 11:20",
+    risk: "Bajo",
+  },
+  {
+    person: "Sofía Andrade",
+    medium: "WhatsApp",
+    result: "Sin respuesta",
+    next: "Contactar hoy",
+    date: "18 nov, 16:10",
+    risk: "Alto",
+  },
+];
+
+export const evidence = [
+  {
+    title: "Perfil y objetivos de investigación",
+    course: "Metodología de investigación",
+    date: "18 nov 2026",
+    status: "Aprobada",
+    feedback: "Buen planteamiento del problema.",
+  },
+  {
+    title: "Marco teórico preliminar",
+    course: "Metodología de investigación",
+    date: "19 nov 2026",
+    status: "En revisión",
+    feedback: "La tutora está revisando tu entrega.",
+  },
+  {
+    title: "Diseño metodológico",
+    course: "Metodología de investigación",
+    date: "—",
+    status: "Pendiente",
+    feedback: "Entrega antes del 8 dic.",
+  },
+  {
+    title: "Proyecto final",
+    course: "Metodología de investigación",
+    date: "—",
+    status: "Pendiente",
+    feedback: "Entrega antes del 18 dic.",
+  },
+];
+
+export const notifications = [
+  {
+    title: "Tu evidencia está en revisión",
+    detail: "Marco teórico preliminar · hace 24 min",
+    unread: true,
+  },
+  {
+    title: "Recordatorio de entrega",
+    detail: "Diseño metodológico · vence en 7 días",
+    unread: true,
+  },
+  {
+    title: "Reunión confirmada",
+    detail: "Con Lucía Mena · 24 nov, 10:00",
+    unread: false,
+  },
+];
+
+export const users = [
+  {
+    name: "Lucía Mena",
+    email: "lucia.mena@institucion.edu.ec",
+    role: "Tutora",
+    state: "Activo",
+    initials: "LM",
+  },
+  {
+    name: "Pablo Ruiz",
+    email: "pablo.ruiz@institucion.edu.ec",
+    role: "Tutor",
+    state: "Activo",
+    initials: "PR",
+  },
+  {
+    name: "Diana León",
+    email: "diana.leon@institucion.edu.ec",
+    role: "Tutora",
+    state: "Activo",
+    initials: "DL",
+  },
+  {
+    name: "María Fernanda Paz",
+    email: "mfpaz@institucion.edu.ec",
+    role: "Coordinadora",
+    state: "Activo",
+    initials: "MP",
+  },
+];
